@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style8.css">
+	<script src="script1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>We Save Animals (WSA) Wellfare Trust</title>
+</head>
+
+
+<body onload="showSlides(1)">
+
+
+<div class="icon-bar">
+  <a class="active" href="https://www.facebook.com/profile.php?id=100064329866728&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+  <a href="https://instagram.com/we__save__animals?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a>
+  <a href="https://youtube.com/@wesaveanimals8357"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-search"></i></a>
+  
+</div>
+<div class="logo">
+    <a href="#"><img class ="logo" src="https://49f75a907f3de7cc2849-8c383cd99e3434faa5a413cd61284364.ssl.cf1.rackcdn.com/1587472542667logo.png" alt="logo"></a>
+</div>
+
+<div class="topnav" id="myTopnav">
+     <a href="index.html" >Home</a>
+	<a href="aboutus.html">About us</a>
+	<a href="services.html" >Services</a>
+	<a href="Gallery.html" >Gallery</a>
+	<a href="contactus.html">Contact us</a>
+	<a href="javascript:void(0)" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+	<div class="DONATE">
+		<a href="donate.html" class="active"><button>DONATE</button></a>
+	</div>
+	  </div>
+
+
+        
+    <div class="container theme-background-white main-body">
+        <div class="col-md-12">
+          <div class="row donate-bar">  
+            <div class="col-md-4 theme-blue">
+              GIVE WHERE NEEDED THE MOST
+            </div>
+            <div class="col-md-8">
+              <ul class="nav navbar-nav navbar-left donate-buttons" id="donate-buttons">
+                <li><a href="#">
+                  <button class="btn-blue active" data-dollars='25' data-impact="Covers housing or counseling services for one person">
+                    Rs.25
+                  </button>
+                </a></li>
+                <li><a href="#">
+                  <button class="btn-blue" data-dollars='50' data-impact="Covers housing or counseling services for two people">
+                    Rs.50
+                  </button>
+                </a></li>
+                <li><a href="#">
+                  <button class="btn-blue" data-dollars='100' data-impact="Covers housing or counseling services for four people">
+                    Rs.100
+                  </button>
+                </a></li>
+                <li><a href="#">
+                  <button class="btn-blue" data-dollars='500' data-impact="Covers housing or counseling services for twenty people">
+                    Rs.500
+                  </button>
+                </a></li>
+                <li id="other"><a href="#">
+                  <button class="btn-blue-other" data-dollars='other' data-impact="Thank you!">
+                    OTHER
+                  </button>
+                </a></li>
+                <li id="other-input">
+                  <span>$</span>
+                 <input data-impact="That’s great. Thank you!">
+                </li>
+                <li><a href="#">
+                  <button class="btn-green" data-toggle="modal" data-target="#myModal">
+                    DONATE
+                  </button>
+                </a></li>
+                <li style="display: none;"><a href="#">
+                  LEARN MORE<i class="fa fa-chevron-right margin-left"></i>
+                </a></li>
+              </ul>
+              <p class="impact">
+                Covers rescuing or counseling services for one animal
+              </p>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header well text-center theme-background-blue">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <h2>You’re Donating:</h2>
+                      <h1 style="font-size: 5.5em; margin-top: 0;">Rs.<span id="price"></span></h1>
+                      <b>Thank you!</b>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">  
+                        <section class="col-md-12">
+                          <form>
+                            <fieldset class="col-md-6">
+                              <legend>
+                                Your personal info
+                              </legend>
+                              <label>Your Name</label>
+                              <input type="string" class="form-control">
+                              <label>Your email</label>
+                              <input type="email" class="form-control">
+                              <label>Address</label>
+                              <input type="email" class="form-control">
+                              <label>City, State, Zip Code</label>
+                              <input type="email" class="form-control">
+                            </fieldset>
+                            <fieldset class="col-md-6">
+                              <legend>
+                                Credit Card Information
+                              </legend>
+                              <label for="card-number">Credit Card Number</label>
+                              <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number" id="card-number">
+                              <label for="card-number">Expiration Date</label>
+                              <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration" id="card-expiration">
+                              <label for="card-number">CVV Number</label>
+                              <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv">
+                              <label for="card-number">Billing Zip Code</label>
+                              <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip">
+                            </fieldset>
+                          </form>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">BACK</button>
+                      <button type="button" class="btn-green">CONTINUE</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+            </div>
+          </div><!--/.donate-bar-->
+        </div><!-- /.col-md-12 -->
+        <footer>
+            <div class="content">
+              <div class="top">
+                <div class="logo-details">
+                  <i class="fa fa-slack"></i>
+                  
+                </div>
+                <div class="media-icons">
+                  <a href="https://www.facebook.com/profile.php?id=100064329866728&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                 
+                  <a href="https://instagram.com/we__save__animals?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a>
+                  
+                  <a href="https://youtube.com/@wesaveanimals8357"><i class="fa fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="link-boxes">
+                <ul class="box">
+                  <li class="link_name">Ways to help</li>
+                  <li><a href="#">Donate</a></li>
+                  <li><a href="#">Volenteer</a></li>
+                  <li><a href="#">Adapt</a></li>
+                  <li><a href="#">Fundraise</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">About WSA</li>
+                    <li><a href="#">our impact</a></li>
+                    <li><a href="#">Rescue</a></li>
+                    <li><a href="#">Adoption</a></li>
+                    <li><a href="#">Shelters</a></li>
+                  </ul>
+                
+                <ul class="box">
+                  <li class="link_name">Services</li>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Rescue injured and old stray animals</a></li>
+                  <li><a href="#">Medical treatments</a></li>
+                  <li><a href="#">Rehabitation center</a></li>
+                  <li><a href="#">Awareness</a></li>
+                </ul>
+                <ul class="box input-box">
+                  <li class="link_name">Get WSA news update</li>
+                  <li><input type="text" placeholder="Enter your email"></li>
+                  <li><input type="button" value="Submit"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom-details">
+              <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2023 <a href="#">TRIO</a>All rights reserved</span>
+                <span class="policy_terms">
+                  <a href="#">Privacy policy</a>
+                  <a href="#">Terms & condition</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+
+    
+</body>
+
+</html>
